@@ -1,0 +1,25 @@
+<form [formGroup]="myContact" (ngSubmit)="onSubmit()">
+    <div class="mb-2" >
+      <label for="exampleInputEmail1" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="input" formControlName="firstname">
+      <span class="span"  style="color: red;" *ngIf=" myContact.get('firstname')?.invalid && myContact.get('firstname')?.touched">First Name is Required min 6 character</span>
+    </div>
+    <div class="mb-3" >
+        <label for="exampleInputEmail1" class="form-label" id="last">Last Name</label>
+        <input type="text" class="form-control" id="input" formControlName="lastname">
+        <span class="span"  style="color: red;" *ngIf=" myContact.get('lastname')?.invalid && myContact.get('lastname')?.touched">Last Name is Required min 6 character</span>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="input2" formControlName="email">   
+        <span class="span"  style="color: red;" *ngIf=" myContact.get('email')?.invalid && myContact.get('email')?.touched"> Email is Required </span>
+
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Message</label>
+      <textarea type="text" class="form-control" id="input2" formControlName="message"></textarea> 
+      <span class="span"  style=" color: red;" *ngIf=" myContact.get('message')?.invalid && myContact.get('message')?.touched">Message is Required</span>
+    </div>
+   
+    <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i><span>Submit</span></button>
+  </form>

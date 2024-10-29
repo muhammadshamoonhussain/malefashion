@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container-fluid" #container>
+        <img class="img-fluid" id="img1" src="https://png.pngtree.com/png-clipart/20230520/ourmid/pngtree-realistic-plain-black-t-shirt-mockup-png-image_7103580.png" alt="" #tshirt>
+        <div class="hero">
+            <h5>Unleash Your Style</h5>
+        <h1>Welcome to our Store!</h1>
+        <p>Discover the latest fashion trends, handcrafted by our team of skilled designers.</p>
+    </div>
+    <div class="button">
+        <button class="btn" routerLink="/product">Shop Now </button>
+        <i class="fa-solid fa-cart-plus"></i>
+    </div>
+      <div class="content">
+    <div class="wrapper" >
+        <img class="img-fluid" id="img" src="https://d2j6dbq0eux0bg.cloudfront.net/images/76998010/4124073244.jpg" alt="">
+    <div class="opacity">
+    </div>
+    </div>
+    <div class="con">
+    <div class="wrapper" id="wra">
+    <img class="img-fluid" id="img" src="https://blog.uberprints.com/content/images/size/w2000/2021/04/premium-t-shirt-fabric-blend-detail.jpg" alt="">
+        
+    <div class="opacity" id="opa">
+    </div>
+    </div>
+    </div>
+    </div> 
+    </div>
+    <div class="allright">
+<div class="right">
+    <h5 class="h5"  >About LooksGood</h5>
+    <h6 class="h6"  >Where Fashion Meets Passion</h6>
+    <p class="text">Egestas id convallis imperdiet mi cum ornare varius. Tellus varius semper tellus at commodo pretium mauris. Massa.</p>
+    <img src="https://looksgood.tokotema.com/wp-content/uploads/2024/08/confident-good-looking-curly-woman-posing-in-studi-2023-11-27-04-56-44-utc-1.jpg" alt="" class="img-fluid">  
+</div>
+</div>
+<div class="counter">
+    <p class="count">{{ count }}+</p>
+    <h1 class="heading">Happy Customers</h1>
+  </div>
+  <div class="counter1">
+    <p class="count1">{{ count1 }}+</p>
+    <h1 class="heading1">Sold T-shirts</h1>
+  </div>
+  <div class="cart-top container-fluid">
+      <div class="container d-flex">
+          <div class="item"><a><img src="" alt=""></a></div>
+          <div class="item"><a><img src="" alt=""></a></div>
+          <div class="item"><a><img src="" alt=""></a></div>
+          <div class="item"><a><img src="" alt=""></a></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center mb-5" style="font-size: 3rem; font-weight: 700;">Our Product</h1>
+            <ng-container *ngFor="let item of productList | slice:0:4">
+            <div class="cart col-md-3 mb-4"  >
+                <img class="img-responsive" src="{{item.image}}" alt="Product Image">
+                <p><strong>Price: </strong>{{item.price}}</p>
+                <p><strong>Category: </strong>{{item.category}}</p>
+                <p class="desc"><strong class="desc1">Description: </strong>{{item.description}}</p>
+
+<button class="btn btn-primary" id="btn" (click)="addtocart(item)"><i class="fa-solid fa-cart-plus" id="icon"></i><span> Add To Cart</span></button>
+            </div>
+        </ng-container>
+      
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+    </body>
+    </html>

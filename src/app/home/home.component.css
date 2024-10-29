@@ -1,0 +1,745 @@
+
+.container-fluid{
+position: relative;
+z-index: 100;
+
+}
+
+.container-fluid img{
+    position: absolute;
+    left: 60%;
+    top: 150px;
+    transition: all .5s ease-in-out;
+    
+}
+.hero{
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    z-index: -1;
+}
+ .hero h5{
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+ .hero h1{
+margin-left: 20px;
+ }
+ .hero p {
+    margin-left: 20px;
+
+ }
+  .button{
+    width: 230px;
+    background: rgb(235, 234, 234);
+    position: relative;
+    top: 349px;
+    left: 11%;
+    height: 47px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 40px;
+    transition: all .4s ease-out;
+    cursor: pointer;
+ }
+.button .btn{
+    position: absolute;
+    left: 8%;
+    text-align: justify;
+    color: rgb(95, 94, 94);
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+ .button .fa-solid{
+    position: absolute;
+    left: 78%;
+    top: 25%;
+    font-size: 1.6rem;
+ }
+ .button:hover{
+    transform: scale(1.1);
+}
+.content{
+    position: relative;
+    top: 253px;
+    left: 10%;
+    width: 90%;
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+.wrapper{
+    height: 1px;
+}
+.wrapper img{
+    height: 130px;
+    width: 250px;
+    position: relative;
+    left: 0%;
+    top: 120px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.opacity   {
+    background-color: rgb(145, 139, 139);
+    padding: 20px;
+    color: white;
+    width: 250px;
+    height: 130px;
+    opacity: .7;
+    border-radius: 7px;
+    position: absolute;
+    top: 120px;
+}
+.con{
+    position: relative;
+    left: 1%;
+}
+.counter{
+    position: absolute;
+    top: 1088px;
+    left: 14%;
+    width: 30%;
+}
+.heading{
+    display: inline;
+    font-size: 1.6rem;
+    color: grey;
+    font-weight: 300;
+    position: absolute;
+    top: 85px;
+    left: -81px;
+}
+.count{
+    font-size: 4rem;
+    font-weight: 700;
+    position: absolute;
+    left: -100px;
+    
+}
+.counter1{
+    position: absolute;
+    top: 1088px;
+    left: 26%;
+    display: flex;
+    align-items: center;
+}
+.heading1{
+    font-size: 1.6rem;
+    color: grey;
+    font-weight: 300;
+    position: absolute;
+    top: 74%;
+    left: 10%;
+}
+.count1{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+.allright{
+    width: 100%;
+}
+.right{
+    display: flex;
+    position: absolute;
+    top: 875px;
+    left: -66%;
+    width: 70%;
+    z-index: -1;
+}
+.h5{
+  color: rgb(218, 77, 119);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 106%;
+  width: 100%;
+}
+.h6{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 35px;
+    left: 106%;
+    font-size: 2rem;
+    width: 40%;
+}
+.text{
+    position: absolute;
+    top: 125px;
+    left: 106%;
+    font-size: 1rem;
+    color: gray;
+    width: 39%;
+}
+.img-fluid{
+    position: absolute;
+    left: 164%;
+    top: -230%;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+}   
+
+.fa-brands{
+    transition: all .3s ease-in-out;
+}
+.fa-brands:hover{
+transform: scale(1.2);
+}
+.container{
+    position: relative;
+    top: 240%;
+}
+#btn{
+    background: black;
+    color: white;
+    border: none;
+    position: relative;
+    padding: 10px 20px;
+    height: 40px;
+    width: 150px;
+}
+
+#icon {
+    position: relative;
+    left: -38%;
+    transition: all .5s ease-in-out;
+}
+#btn span{
+    width: 100%;
+    height: 10%;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    position: relative;
+    left: -8%;
+}
+#btn:hover span{
+    visibility: hidden;
+    opacity: 0;
+}
+#btn:hover #icon{
+    left: 30%;
+    transform: translate(50%);
+}
+@media (max-width: 1150px) {
+    .container-fluid .img-fluid{
+       width: 30%;
+       left: 68%;
+   
+   } 
+       .right img{
+           width: 69%;
+       }
+       .wrapper #img{
+        width: 250px;
+        left: 0%;   
+    }
+   }
+@media (max-width: 1100px) {
+ .container-fluid .img-fluid{
+    width: 30%;
+    left: 68%;
+
+} 
+    .hero{
+        top: 152px;
+        left: 8%;
+    
+    }
+    .right img{
+        width: 66%;
+    }
+    .wrapper #img{
+        width: 250px;
+        left: 0%;   
+    }
+}
+@media (max-width: 989px) {
+    .container-fluid .img-fluid{
+       width: 30%;
+       left: 68%;
+   } 
+   .wrapper #img{
+    width: 250px;
+    left: 0%;   
+}
+       .hero{
+           top: 152px;
+           left: 8%;
+       
+       }
+       .right img{
+        width: 61%;
+        left: 171%;
+       }
+       .count1{
+        font-size: 3rem;
+        font-weight: 700
+    }
+    .count{
+        font-size: 3rem;
+        font-weight: 700
+    }
+    .heading{
+        font-size: 1.4rem;
+        top: 68px;
+        left: -32%;
+    }
+    .counter1{
+        width: 16%;
+    }
+   }
+   @media (max-width: 884px) {
+    .container-fluid .img-fluid{
+       width: 30%;
+       left: 68%;
+   }    
+   .wrapper #img{
+    width: 250px;
+    left: 0%;   
+}
+.wrapper{
+    width: 200px;
+}
+.opacity   {
+    background-color: rgb(145, 139, 139);
+    padding: 20px;
+    color: white;
+    width: 200px;
+    height: 130px;
+    opacity: .7;
+    border-radius: 7px;
+    position: absolute;
+    top: 120px;
+}
+.hero{
+    width: 53%;
+}
+.counter{
+    top: 180%;
+}
+.count{
+    font-size: 2.3rem;
+    left: -35%;
+}
+.heading{
+    top: 46px;
+        left: -37%;
+        font-size: 1.2rem;
+}
+.counter1{
+    top: 180%;
+}
+.count1{
+    font-size: 2.3rem;
+}
+.heading1{
+    top: 46px;
+        left: 0%;
+        font-size: 1.2rem;
+}
+.row{
+    width: 106%;
+    left: 0%;
+    top: -200px;
+    position: absolute;
+}
+.row .img-responsive{
+    left: -27%;
+    position: relative;
+    gap: 1px;
+    display: flex;
+    width: 205px;
+}
+#btn{
+    width: 138px;
+}
+#btn span{
+    font-size: 0.9rem;
+}
+    #icon{
+        left: -44%;
+    }
+}
+@media (max-width: 798px) {
+    .container{
+        width: 92%;
+    }
+}
+@media (max-width: 774px) {
+    .right .text{
+        width: 55%;
+        top: 130px;
+    }
+    .right .h6{
+        width: 64%;
+    }
+    .counter{
+        top: 175%;
+        left: 19%;
+    }
+    .counter1{
+        top: 175%;
+        left: 29%;
+    }
+    .row{
+        width: 104%;
+    }
+    .row .img-responsive{
+        width: 180px;
+        left: -14%;
+        gap: 10px;
+    }
+    #btn{
+        width: 128px;
+    }
+    #btn span{
+        font-size: 12px;
+        left: -12%;
+        top: -2px;
+        }
+        #btn #icon{
+            left: -47%;
+        }
+}
+
+@media (max-width: 770px) {
+
+    .cart p{
+       width: 36%;
+    }
+
+    .container{
+        display: flex;
+    }
+}
+@media (max-width: 767px) {
+    .row {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .cart {
+        width: 100%; /* Full width for each card */
+        margin-bottom: 20px; /* Space between cards */
+        text-align: center; /* Center align text */
+    }
+
+    .cart img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .cart p {
+        width: auto; /* Auto width for paragraphs */
+    }
+    .cart .img-responsive{
+        left: 32%;
+        width: 206px;
+
+    }
+}
+
+
+   @media (max-width: 650px) {
+    .container-fluid #img1 {
+        width: 38% !important;
+        left: 31% !important;
+        top: 807% !important;
+    }
+    .content{
+        top: 454px;
+        left: 18%;
+    }
+   .hero{
+    top: 217%;
+    width: 64%;
+    left: 18%;
+   }
+   .button{
+    top: 306px;
+        left: 29%;
+   }
+   .allright{
+    top: 64px;
+    position: absolute;   
+}
+.right{
+    width: 80%;
+}
+.right .h6{
+    width: 98%;
+}
+.right .text{
+    width: 98%;
+}
+.right .img-fluid{
+    width: 316px;
+    left: 109%;
+    top: 282px;
+}
+.counter{
+    top: 174%;
+    left: 38%;
+}
+   .counter1{
+        top: 174%;
+        left: 58%;
+        width: 26%;
+    }
+    .count{
+        font-size: 2.2rem;
+    }
+    .count1{
+        font-size: 2.2rem;
+        margin-left: -49px;
+    }
+    .counter .heading{
+        font-size: 1.1rem;
+        left: -49%;
+        top: 45px;
+    }
+    .counter1 .heading1{
+        font-size: 1.1rem;
+        left: -28%;
+        top: 45px;
+    }
+    .allright .text{
+        top: 91px;
+    }
+    .content{
+        width: 80%;
+    }
+    
+   }
+   @media (max-width: 639px) {
+    
+    .right .h6{
+        font-size: 1.7rem;
+    }
+    .right .text{
+        font-size: .9rem;
+    }
+
+   }
+   @media (max-width: 574px) {
+   .container{
+    width: 96%;
+   }
+   .cart .desc{
+     width: 52%;
+     margin-left: 128px;
+   }
+   }
+   @media (max-width: 545px) {
+    .counter1{
+        left: 64%;
+    }
+    .button{
+        top: 286px;
+        left: 22%;
+    }
+    .hero{
+      
+        top: 82%;
+        left: 22%;
+    }
+    
+    .wrapper{
+        width: 180px;
+    }
+    .opacity{
+        width: 180px;
+    }
+    #wra{
+        width: 180px;
+        left: 11px;
+        position: absolute;
+    }
+    #opa{
+        width: 180px;
+        left: 0%;
+    }
+    .content{
+        left: 16%;
+        top: 500px;
+    }
+    .container-fluid{
+        left: -9%;
+    }
+    .container-fluid #img1{
+        width: 222px !important;
+    }
+    .hero h1{
+        width: 107%;
+    }
+    .allright{
+        left: -1%;
+        top: 20%;
+    }
+    .counter{
+        top: 163%;
+        display: none;
+    }
+    .counter1{
+        top: 163%;
+        left: 66%;
+
+        display: none;
+    }
+    .counter .heading{
+        left: -80%;
+    }
+    .counter1 .heading1{
+        left: -60%;
+    }
+    .right .img-fluid{
+        left: 97%;
+        top: 210px;
+        width: 350px;
+    }
+    .right .text{
+    top: 120px; 
+   }
+   .container{
+    top: 246%;
+   }
+   }
+   @media (max-width: 435px) {
+    .button{
+        top: 286px;
+        left: 22%;
+    }
+    .hero{
+      
+        top: 82%;
+        left: 22%;
+    }
+    
+    .wrapper{
+        width: 180px;
+    }
+    .opacity{
+        width: 180px;
+    }
+    #wra{
+        width: 180px;
+        left: 11px;
+        position: absolute;
+    }
+    #opa{
+        width: 180px;
+        left: 0%;
+    }
+    .content{
+        left: 11%;
+        top: 500px;
+    }
+    .container-fluid{
+        left: -9%;
+    }
+    .container-fluid #img1{
+        width: 222px !important;
+    }
+    .hero h1{
+        width: 107%;
+    }
+    .allright{
+        left: -1%;
+        top: 20%;
+    }
+    .counter{
+        top: 163%;
+        display: none;
+    }
+    .counter1{
+        top: 163%;
+        left: 66%;
+
+        display: none;
+    }
+    .counter .heading{
+        left: -80%;
+    }
+    .counter1 .heading1{
+        left: -60%;
+    }
+    .right .img-fluid{
+        left: 97%;
+        top: 210px;
+        width: 350px;
+    }
+    .right .text{
+    top: 120px; 
+   }
+   .container{
+    top: 246%;
+   }
+
+}
+
+@media (max-width: 410px) {
+    .wrapper{
+        width: 143px;
+        left: 7%;
+        position: relative;
+    }
+    .opacity{
+        width: 143px;
+    }
+    #wra{
+        width: 143px;
+        left: 45px;
+    }
+    #opa{
+        width: 143px;
+        left: 0%;
+    }
+}
+
+@media (max-width: 366px) {
+    #wra{
+        left: 25px;
+    }
+    .cart .desc{
+        margin-left: 70px;
+    }
+    .cart .img-responsive{
+        left: 19%;
+    }
+}
+
+@media (max-width: 345px) {
+    .wrapper{
+        left: 1%;
+    }
+    #wra{
+        left: 11px;
+    }
+}
+
+@media (max-width: 330px) {
+    #wra{
+        width: 192px;
+        left: -133px;
+        top: 136px;
+    }
+    #opa{
+        width: 192px;
+    }
+    .wrapper{
+        top: -31px;
+        left: 26%;
+        width: 192px;
+    }
+    .opacity{
+        width: 192px;
+    }
+    .allright{
+      top: 35%;
+    }
+}

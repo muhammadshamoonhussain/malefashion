@@ -1,0 +1,750 @@
+ 
+ .form-control{
+    border-radius: 7px;
+    margin-left: 100px;
+    margin-top: -30px;
+    width: 600px;
+}
+span i{
+    position: absolute;
+    left: 90%;
+    top: 44%;
+    color: #0d6efd;
+    cursor: pointer;
+}
+.navbar-brand{
+    margin-left: 150px;
+}
+.form-group input{
+    position: absolute;
+    width: 30%;
+    left: 55%;
+}
+header{
+    position: relative;
+    display: inline;
+    width: 100%;
+}
+#menu{
+    display: inline;
+    margin-left: 10px;
+}
+#navbar-menu{
+    position: absolute;
+    margin: 0px;
+    margin-left: 0px;
+    display: inline-flex;
+    left: 25%;
+    top: 30%;
+    list-style: none;
+}
+#navbar-menu .li{
+    position: relative;
+}
+ #navbar-menu .li a{
+    color: black;
+    text-decoration: none;
+    margin-left: 27px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+#navbar-menu .li a::before,
+#navbar-menu .li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 120%;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+}
+#navbar-menu .li a::before{
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 32%;
+    width: 10px;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+ 
+}
+#navbar-menu .li a::after{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 87%;
+    width: 10px;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#navbar-menu .li a:hover::before,
+#navbar-menu .li a:hover::after{
+    transform: scaleX(5.5);
+    height: 2px;
+} 
+#truck{
+    margin-left: -620px;
+    font-size: 1.9rem;
+    animation: bounce 2s infinite;
+}
+.logo{
+    position: absolute;
+    color: black;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    20%{transform: translateY(-10);}
+    50% { transform: translateY(-10px); }
+    70% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+
+}
+#btn{
+    background: white;
+    border: none;
+    color: black;
+    font-size: .8rem;
+    /* transition: all 0.5s ease-in-out; */
+}
+#btn1{
+    transition: all .5s ease-in-out;
+}
+
+#btn1:hover{
+transform: scale(1.2);
+}
+#input{
+    box-shadow: none;
+}
+#search{
+color: black;
+}
+footer{
+    position: absolute;
+    top: 400%;
+    width: 100%;
+}
+.links{
+    display: block;
+    position: absolute;
+    left: 73%;
+    list-style: none;
+
+}
+.links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}   
+   .toggle-button {
+    cursor: pointer;
+    display: none; /* Hide on larger screens */
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+#cross{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    display: none;
+    color: black;
+    font-size: 3.5rem;
+}
+#icons a i{
+    transition: all .5s ease-in-out;
+}
+#icons a i:hover{
+transform: scale(1.3);
+}
+@media (max-width: 1115px) {
+    #input{
+        left: 53%;
+        top: 68%;
+    }
+    #search{
+        left: 89%;
+        font-size: 1.1rem;
+        top: 35%;
+    
+    }
+    #input::placeholder{
+        font-size:1.1rem;
+    }
+    #navbar-menu .li a{
+        left: -75%;
+        position: relative;
+    }
+    #truck {
+        margin: 0; /* Remove left margin */
+        font-size: 1.9rem; /* Icon size */
+        animation: bounce 2s infinite; /* Keep the bounce animation */
+        position: absolute;
+        left: 29px;
+    }
+    .logo {
+        top: 20px; /* Adjust vertical position */
+        left: 67px; /* Adjust horizontal position */
+        z-index: 1000; /* Ensure it stays above other elements */
+    }
+    
+        .links{
+            position: absolute;
+            left: 56%;
+            top: 22%;
+            transform: translateY(-50%);
+            list-style: none;
+        }
+        .links a{
+            text-decoration: none;
+            margin-top: -4px;
+            width: 127px;
+            margin-left: -3px;
+        }
+        #quicks{
+            top: -68px;
+            position: absolute;
+            left: 54%;
+            width: 64%;
+    
+            }
+        #quicks h5{
+            top: -68px;
+            position: absolute;
+            left: 65%;
+        
+        }
+        #navbar-menu .li a::before{
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: -2%;
+            width: 10px;
+            height: 2px;
+            background: black;
+            transform: scaleX(0);
+            transform-origin: left;
+         
+        }
+    
+}
+@media (max-width: 940px) {
+    #input{
+        left: 51%;
+        top: 68%;
+        width: 246px;
+
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size:1rem;
+    }
+   
+}
+
+@media (max-width: 835px) {
+    #input{
+        left: 53%;
+        top: 68%;
+        width: 215px;
+
+    }
+    #search{
+        left: 88%;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 810px) {
+    #input{
+        left: 53%;
+        top: 68%;
+        width: 202px;
+
+    }
+    #search{
+        left: 88%;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 781px) {
+
+    #input{
+        left: 53%;
+        top: 68%;
+        width: 185px;
+
+    }
+    #search{
+        margin-left: -2px;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        color: rgb(0, 0, 0);
+
+    }
+    #cross{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 3.5rem;
+    z-index: 10000;
+
+    }
+    #menu{
+        width: 59%;
+    }
+    #truck {
+        margin: 0; 
+        font-size: 1.9rem; 
+        animation: bounce 2s infinite; 
+        position: absolute;
+        left: 79px;
+    }
+    .logo {
+        top: 30px;
+        left: 116px; 
+        z-index: 1000; 
+    }
+    #navbar-menu{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        display: inline-block;
+        transition: all .7s ease-in-out;
+        z-index: 1000;
+    }
+    #navbar-menu .li{
+        position: relative;
+        top: 24%;
+    }
+    #navbar-menu .li a{
+        color: white;
+        font-size: 2.9rem;
+        cursor: pointer;
+        left: 28%;
+    }
+    #navbar-menu .li a::before,
+    #navbar-menu .li a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 120%;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+}
+#navbar-menu .li a::before{
+    content: '';
+    position: absolute;
+    top: -5%;
+    left: -6%;
+    width: 10px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transform-origin: left;
+ 
+}
+#navbar-menu .li a::after{
+    content: '';
+    position: absolute;
+    top: 97%;
+    left: auto;
+    width: 10px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#navbar-menu .li a:hover::before,
+#navbar-menu .li a:hover::after{
+    transform: scaleX(12);
+    height: 5px;
+} 
+    #navbar-menu.close {
+        left: 0px;	
+    }
+    #navbar-menu.open {
+        left:-100%;    
+    }
+    #input{
+        left: 45%;
+        top: 62%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+    footer{
+        top: 986%;
+        width: 100%;
+        overflow: hidden;
+        }
+        .container-fluid{
+            width: 105%;
+        }
+        #contact{
+            margin-left: -237px;
+        }
+    .col-md-4{
+        margin-left: -78px;
+    }
+    .links{
+        display: block;
+        position: absolute;
+        left: 57%;
+        top: 22%;
+        transform: translateY(-50%);
+        list-style: none;
+    }
+    .links a{
+        color: white;
+        text-decoration: none;
+        margin: 4px;
+    }
+    #quicks{
+        top: 32%;
+        position: absolute;
+        left: 40%;
+        }
+    #quicks h5{
+        top: -68px;
+        position: absolute;
+        left: 65%;
+    
+    }
+    #icons{
+        margin-left: -25px;
+    }
+}
+@media (max-width: 750px) {
+    #input{
+        left: 45%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+    #btn{
+        top: -48px;
+        position: relative;
+        left: 90%;
+    }
+}
+@media (max-width: 729px) {
+    #input{
+        left: 43%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}   
+@media (max-width: 701px) {
+    #input{
+        left: 41%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+    #btn{
+        left: 89%;
+    }
+
+}   
+@media (max-width: 686px) {
+    #input{
+        left: 40%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}   
+@media (max-width: 676px) {
+    #input{
+        left: 39%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}  
+@media (max-width: 659px) {
+    #input{
+        left: 38%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}    
+@media (max-width: 650px) {
+    #input{
+        left: 35%;
+    }
+    #search{
+        left: 84%;
+    }
+    #btn{
+        left: 88%;
+    }
+
+footer{
+    top: 949%;
+    width: 100%;
+
+    overflow: hidden;
+    }
+    .container-fluid{
+        width: 105%;
+    }
+    #contact{
+        margin-left: -237px;
+    }
+.col-md-4{
+    margin-left: -78px;
+}
+.links{
+    display: block;
+    position: absolute;
+    left: 54%;
+    top: 22%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    margin:4px;
+}
+#quicks{
+    top: 32%;
+    position: absolute;
+    left: 43%;
+    }
+#quicks h5{
+    top: -68px;
+    position: absolute;
+    left: 65%;
+
+}
+#icons{
+    margin-left: -59px;
+}
+.row{
+    margin-left: 61px;
+}
+}
+
+@media (max-width: 622px) {
+    #input{
+        left: 36%;
+        top: 44%;
+        width: 222px;
+        display: none;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+        display: none;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+    #btn{
+        top: -48px;
+        position: relative;
+        left: 86%;
+    }
+}
+
+@media (max-width: 615px) {
+    #input{
+        left: 35%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}
+@media (max-width: 600px) {
+    #input{
+        left: 34%;
+        top: 44%;
+        width: 222px;
+    }
+    #search{
+        left: 85%;
+        font-size: 1.1rem;
+        top: 26%;
+    }
+    #input::placeholder{
+        font-size:.9rem;
+    }
+}
+@media (max-width: 590px) {
+    #icons{
+        margin-left: -59px;
+    }
+    #contact{
+        margin-left: -198px;
+    }
+        #input{
+            left: 33%;
+            top: 44%;
+            width: 222px;
+        }
+        #search{
+            left: 85%;
+            font-size: 1.1rem;
+            top: 26%;
+        }
+        #input::placeholder{
+            font-size:.9rem;
+        }
+    
+}
+@media (max-width: 582px) {
+    #btn{
+        left: 0%;
+    }
+    #truck{
+        top: 21%;
+    }
+}
+
+@media (max-width: 520px) {
+    #contact{
+        margin-left: -180px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact{
+        margin-left: -152px;
+    }
+}
+
+
+@media (max-width: 435px) {
+    #input{
+        left: 25%;
+        top: 68%;
+    }
+    #search{
+        left: 73%;
+        font-size: 1.1rem;
+    }
+    #input::placeholder{
+        font-size:.6rem;
+    }
+    #navbar-menu .li a {
+        top: 8px;
+        position: relative;
+        left: 22%;
+        margin: 2px;
+
+    }
+    #navbar-menu .li a::before{
+        content: '';
+        position: absolute;
+        top: -8%;
+        left: -1%;
+        width: 10px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        transform: scaleX(0);
+        transform-origin: left;
+     
+    }
+    
+}
+
+@media (max-width: 418px) {
+    #contact{
+        margin-left: -118px;
+    }
+}
+@media (max-width: 366px) {
+    #quicks{
+        left: 17%;
+    }
+    .links{
+        left: 55%;
+    }
+}

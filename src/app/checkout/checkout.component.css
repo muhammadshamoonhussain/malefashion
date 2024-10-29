@@ -1,0 +1,51 @@
+.form-control{
+    width: 80%;
+}
+
+.container-fluid{
+    display: block;
+    position: relative;
+    left: 6%;
+    top: 130px;
+    width: 60%;
+    }
+     h1{
+        margin-top: -21px;
+        position: absolute;
+        top: -17%;
+        left: 23%;
+        font-weight: 600;    
+        }
+ .form-control:focus{
+   box-shadow: none;
+   outline: none;
+   border: 1px solid black;
+ }       
+ .btn{
+    background-color: black;
+    border: none;
+    width: 120px;
+ }
+.btn span{
+    transition: visbility 0.3s, opacity 0.3s ease-in-out;
+    font-size: 1.1rem;
+    margin-left: -15px;
+    box-shadow: none;
+ }
+ .btn:focus{
+    box-shadow: none;
+    border: none;
+ }
+ .btn:hover span{
+    visibility: hidden;
+    opacity: 0;
+ }
+ .btn .fa-solid{
+    position: relative;
+    left: -50%;
+    transition: all .5s ease-in-out;
+    font-size: 1.3rem;
+ }
+ .btn:hover .fa-solid{
+    transform: translateX(80px);
+ }

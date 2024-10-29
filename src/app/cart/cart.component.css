@@ -1,0 +1,457 @@
+.card{
+    height: 60vh;
+    margin: 25px;
+    padding: 25px;
+}
+.center{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+.center img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+#btn{
+    background: black;
+    border: none;
+    transition: all .5s ease-in-out;
+    width: 146px;
+    margin-left: 10px;
+}
+#btn #shop{
+    position: absolute;
+    left: 0%;
+    top: 91%;
+    transition: all .6s ease-in-out;
+}
+#btn:hover #shop{
+  transform: translateX(90px);
+
+}
+#btn span{
+    transition: visibilty .3s opacity .5s ease-in-out;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#btn:hover span{
+    visibility: hidden;
+    opacity: 0;
+}
+#delete{
+    background: black;
+    border: none;
+    width: 145px;
+    transition: all .5s ease-in-out;
+}
+#delete span{
+    transition: visibilty .3s opacity .5s ease-in-out;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#delete:hover span{
+visibility: hidden;
+opacity: 0;
+}
+#delete #del{
+    position: absolute;
+    left: 104px;
+    margin-top: 5px;
+    transition: all .5s ease-in-out;
+}
+
+#delete:hover #del{
+transform: translateX(95px);
+}
+#btn5{
+    margin-left: 10px;
+    background: black;
+    border: none;  
+    width: 127px;
+}
+#btn5 span{
+    font-weight: 600;
+    position: relative;
+    font-family: sans-serif;
+    left: -10%;
+    transition: visibility .3s opacity .3s;
+}
+#btn5:hover span{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#btn5 #shop1{
+    position: relative;
+    left: -35px;
+    top: 1px;
+    transition: all .6s ease-in-out;
+}
+#btn5:hover #shop1{
+  transform: translateX(80px);
+
+}
+#btn2 {
+    background: black;
+    border: none;
+    width: 140px;
+}
+#btn2 #del2 {
+    position: relative;
+    left: -50%;
+    transition: all .5s ease-in-out;
+}
+
+#btn2:hover #del2 {
+    transform: translateX(85px);
+}
+ #btn2 span {
+    font-weight: 600;
+    letter-spacing: 2.3px;
+    margin-left: -7px;
+    transition: visibility .3s opacity .3s;
+}
+
+#btn2:hover span {
+    visibility: hidden;
+    opacity: 0;
+}
+#check {
+    background: black;
+    border: none;
+    width: 140px;
+    margin-left: 10px;
+}
+#check #del3 {
+    position: relative;
+    left: -36%;
+    transition: all .5s ease-in-out;
+}
+
+
+#check:hover #del3 {
+    transform: translateX(85px);
+}
+#check span {
+    font-weight: 600;
+    letter-spacing: 2.3px;
+    transition: visibility .3s opacity .3s ease-in-out;
+    margin-left: -8px;
+}
+
+#check:hover span {
+    visibility: hidden;
+    opacity: 0;
+}
+h4{
+    position: absolute;
+    left: 46%;
+
+}
+@media only screen and (max-width: 1115px) {
+    .table th:nth-child(5),
+    .table td:nth-child(5),
+    .table th:nth-child(6),
+    .table td:nth-child(6){
+        display: none;
+    }
+td img{
+    width: 160px;
+}
+    
+#btn2{
+    width: 95px;
+}
+#btn2:hover #del2 {
+    transform: translateX(60px);
+} 
+#delete{
+    width: 121px;
+    left: 5%;
+    position: absolute;
+}
+#del{
+    color: rgb(255, 255, 255);
+    margin-left: -697px;
+}
+#delete:hover #del{
+    transform: translateX(70px);
+}
+#btn5{
+    left: 18%;
+    position: absolute;
+}
+#check{
+    width: 143px;
+    margin-left: -387px;
+    margin-top: 68px;
+}
+h4{
+    margin-left: -277px;
+    margin-top: 68px;
+}
+tr{
+    width: 10%;
+}
+}
+@media only screen and (max-width: 1046px) {
+    #btn5{
+        left: 20%;
+    }
+    h4{
+        left: 59%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #check{
+        width: 143px;
+        margin-left: -287px;
+        margin-top: 68px;
+    }
+}
+
+@media only screen and (max-width: 913px) {
+    #btn5{
+        left: 21%;
+    }
+    h4{
+        left: 59%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    #btn5{
+        left: 22%;
+    }
+    h4{
+        left: 60%;
+    }
+}
+@media only screen and (max-width: 806px) {
+    #btn5{
+        left: 23%;
+    }
+    h4{
+        left: 63%;
+    }
+    #check{
+        width: 149px;
+        margin-left: -287px;
+        margin-top: 68px;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    #btn5{
+        left: 24%;
+    }
+    h4{
+        left: 75%;
+    }
+    #check{
+margin-left: -152px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    #btn5{
+        left: 24%;
+    }
+    h4{
+        left: 79%;
+    }
+    #check{
+margin-left: -122px;
+    }
+}   
+@media only screen and (max-width: 722px) {
+    #btn5{
+        left: 25%;
+    }
+    h4{
+        left: 81%;
+    }
+}
+@media only screen and (max-width: 690px) {
+    #btn5{
+        left: 26%;
+    }
+    h4{
+        left: 83%;
+    }
+}
+@media only screen and (max-width: 655px) {
+    #btn5{
+        left: 29%;
+    }
+    h4{
+        left: 85%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #btn5{
+        left: 31%;
+    }
+    h4{
+        left: 89%;
+    }
+}
+@media only screen and (max-width: 532px) {
+    #btn5{
+        left: 33%;
+    }
+    h4{
+        left: 91%;
+    }
+}
+@media (max-width:515px) {
+    .table th, 
+    .table td {
+        display: block; /* Table cells ko block mein display karna */
+        width: 100%; /* Full width tak expand karna */
+    }
+
+    td img {
+        width: 100px; /* Choti screens ke liye image size adjust karna */
+    }
+
+    .card-product {
+        display: block; /* Card ko block mein convert karna for responsiveness */
+    }
+    #check{
+        margin-left: 10px;
+        margin-top: 27px;
+    
+    }
+    h4{
+        margin-left: -201px;
+        margin-top: -46px;
+    }
+    #btn5{
+        left: 33%;
+        top: 204%;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    #btn5{
+        left: 35%;
+    }
+    h4{
+        left: 94%;
+    }
+}
+@media only screen and (max-width: 462px) {
+    #btn5{
+        left: 37%;
+    }
+    h4{
+        left: 105%;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .table th, 
+    .table td {
+        display: block; /* Table cells ko block mein display karna */
+        width: 100%; /* Full width tak expand karna */
+    }
+
+    td img {
+        width: 80px; /* Choti screens ke liye image size adjust karna */
+    }
+
+    .card-product {
+        display: block; /* Card ko block mein convert karna for responsiveness */
+    }
+    
+#btn2{
+    width: 95px;
+}
+#btn2:hover #del2 {
+    transform: translateX(60px);
+} 
+#delete{
+    width: 121px;
+    left: 5%;
+    position: absolute;
+}
+#del{
+    color: rgb(255, 255, 255);
+    margin-left: -697px;
+}
+#delete:hover #del{
+    transform: translateX(70px);
+}
+#btn5{
+    margin-left: 26px;
+    margin-top: -174px;
+}
+#check{
+    margin-left: 10px;
+    margin-top: 27px;
+
+}
+h4{
+    margin-left: -201px;
+    margin-top: -46px;
+}
+tr{
+    width: 10%;
+}
+}
+@media only screen and (max-width: 375px) {
+    .table th, 
+    .table td {
+        display: block; /* Table cells ko block mein display karna */
+        width: 100%; /* Full width tak expand karna */
+    }
+
+    td img {
+        width: 50px; /* Choti screens ke liye image size adjust karna */
+    }
+
+    .card-product {
+        display: block; /* Card ko block mein convert karna for responsiveness */
+    }
+    
+#btn2{
+    width: 95px;
+}
+#btn2:hover #del2 {
+    transform: translateX(60px);
+} 
+#delete{
+    width: 121px;
+    left: 5%;
+    position: absolute;
+}
+#del{
+    color: rgb(255, 255, 255);
+    margin-left: -697px;
+}
+#delete:hover #del{
+    transform: translateX(70px);
+}
+#btn5{
+   
+    margin-left: 26px;
+    margin-top: -174px;
+
+}
+#check{
+    margin-left: 10px;
+    margin-top: 27px;
+
+}
+h4{
+    margin-left: -201px;
+    margin-top: -46px;
+}
+tr{
+    width: 10%;
+}
+}

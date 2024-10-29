@@ -1,0 +1,53 @@
+    <ng-container *ngIf="products.length != 0" style="overflow-x: hidden;">
+<div class="container" style="overflow-x: hidden;">
+    <div class="card-table mt-5">
+        <div class="card-product">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Product Name</th>
+                        <th>Product Image</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of products,let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{item.name}}</td>
+                        <td><img src="{{item.image}}" alt=""></td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.description}}</td>
+                        <td>{{item.category}}</td>
+                         <td><button (click)="removeproduct(item)" class="btn btn-danger" id="btn2"><i class="fa-solid fa-trash" id="del2"></i><span>Delete</span></button></td>  
+                    </tr>
+                    <tr>
+                            <td><button (click)="removeallproduct()" class="btn btn-danger" id="delete"><i class="fa-solid fa-trash" id="del"></i><span>Empty Cart</span></button></td>
+                            <td><button routerLink="/product" type="submit" class="btn btn-primary" id="btn5"><i class="fa-solid fa-shop" id="shop1"></i><span>Shop More</span></button></td>
+                            <td><button class="btn btn-danger" id="check" routerLink="/checkout"><i class="fa-solid fa-bag-shopping" id="del3"></i><span>Check Out</span></button></td> 
+                            <h4>{{allproduct}}</h4>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</ng-container>
+
+
+<ng-container *ngIf="products.length == 0">
+<div class="container mt-5">
+    <div class="card">
+        <h4 class="cart-title">My Cart</h4>
+    </div>
+    <div class="center">
+        <img src="https://cdn-icons-png.flaticon.com/512/11329/11329060.png" alt="">
+        <h5>Your Cart is empty</h5>
+        <h6>Add item to it now</h6>
+        <button routerLink="/product" type="submit" class="btn btn-primary" id="btn"><i class="fa-solid fa-shop" id="shop"></i><span>Shop Now</span></button>
+    </div>
+</div>
+</ng-container><router-outlet></router-outlet>

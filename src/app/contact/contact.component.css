@@ -1,0 +1,98 @@
+/* General Form Styling */
+form {
+    margin-top: 70px;
+    margin-left: 5%;
+    width: 90%; /* Use percentage to make the form container responsive */
+}
+
+#input, #input2 {
+    width: 85%; /* Adjusted to percentage */
+    margin-left: 5%;
+}
+
+.form-text, .form-label {
+    margin-left: 5%;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    background: black;
+    position: relative;
+    left: 5%;
+    width: 120px;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn span {
+    position: relative;
+    left: -10%;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+.btn .fa-regular {
+    position: relative;
+    left: -40%;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover .fa-regular {
+    transform: translateX(75px);
+}
+
+.btn:hover span {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#lastname {
+    margin-left: 5%; /* Adjust for responsiveness */
+}
+
+.span {
+    position: relative;
+    left: 5%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Enhanced Media Queries */
+@media (max-width: 768px) {
+    #input, #input2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .btn {
+        left: 10%;
+    }
+
+    .span {
+        left: 10%;
+    }
+}
+
+@media (max-width: 435px) {
+    #input, #input2 {
+        width: 100%;
+        margin-left: -2%;
+    }
+
+    .span {
+        margin-left: -10%;
+    }
+
+    .btn {
+        left: 23%;
+    }
+}

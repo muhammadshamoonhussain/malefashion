@@ -1,0 +1,22 @@
+<form action="javascript:void(0)" [formGroup]="checkOut" (ngSubmit)="check()">
+    <div class="container-fluid">
+        <h1>Check-Out Form</h1>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+      <span style="color: red;" *ngIf="checkOut.get('email')?.invalid && checkOut.get('email')?.touched">Email is Requird</span>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Address</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="address">
+      <span style="color: red;" *ngIf="checkOut.get('address')?.invalid && checkOut.get('address')?.touched">Address is Requird</span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Postal Code</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="postal">
+      <span style="color: red;" *ngIf="checkOut.get('postal')?.invalid && checkOut.get('postal')?.touched">Email is Requird</span>
+
+      </div>
+    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i><span>Order Now</span></button>
+</div>
+  </form>

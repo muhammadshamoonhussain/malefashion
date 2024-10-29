@@ -1,0 +1,56 @@
+<header id="header">
+    <div class="navbar">
+               <div class="toggle-button" (click)="toggleMenu()">&#9776;</div>
+            <span class="toggle-button" id="cross" (click)="toggleMenu()">&times;</span>
+        
+        <nav id="menu">
+            <ul id="navbar-menu" class="collapsed" [ngClass]="{'open' : ismenuOpen, 'close': !ismenuOpen}">   
+                <li class="li"><a routerLink="">Home</a></li>
+                <li class="li"><a routerLink="about">About</a></li>
+                <li class="li"><a routerLink="product">Product</a></li>
+                <li class="li"><a routerLink="contact">Contact</a></li>
+            </ul>    
+        </nav>
+        <div class="navbar-brand align-item-center s-flex">
+            <i class="fa-solid fa-truck" id="truck">
+            </i>
+            <strong style="cursor: pointer;" class="logo" routerLink="/">E-Cart</strong>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search Product" id="input">
+            </div>
+            <span><i class="fa-solid fa-magnifying-glass" id="search"></i></span>
+        </div>
+        <button routerLink="cart" class="btn btn-primary" id="btn"><i class="fa-solid fa-cart-plus" id="btn1" style="font-size: 1.5rem;"></i>
+            <div class="badge bg-danger">{{totalCart}}</div>
+        </button>
+    </div>
+</header>
+
+<footer style="background-color: #000000; color: white; padding: 40px 0; margin-top: 40px;">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-4" id="contact">
+                <h5>Contact Us</h5>
+                <p>Email: infolooksgood.com</p>
+                <p>Phone: +123 456 789</p>
+            </div>
+            <div class="col-md-4" id="icons">
+                <h5>Follow Us</h5>
+                <a href="#" style="color: white; margin-right: 15px;"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                <a href="#" style="color: white; margin-right: 15px;"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#" style="color: white;"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="col-md-4" id="quicks">
+                <h5>Quick Links</h5>
+                <ul class="links">
+                    <li><a href="" style="color: white;">About us</a></li>
+                    <li><a href="">Privicy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border-top: 1px solid white;">
+        <p>&copy; 2024 LooksGood. All Rights Reserved.</p>
+    </div>
+</footer>
