@@ -11,18 +11,14 @@
     },
     { "src": "dist/your-project-name/**/*", "use": "@vercel/static" }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)", 
-      "dest": "/db.json"
+      "source": "/api/(.*)",
+      "destination": "/server.js"
     },
     {
-      "src": "/(.*)", 
-      "dest": "/dist/$1"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-    
-  ],
-   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
