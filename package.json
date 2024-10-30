@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && node server.js",
-    "build": "ng build",
+    "serve": "ng serve",
+    "backend": "json-server --watch db.json",
+    "start": "npm-run-all --parallel serve backend",
+        "build": "ng build",
     "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
